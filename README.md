@@ -203,6 +203,10 @@ curl -O tomcat.tar.gz
 tar -xvzf tomcat.tar.gz -C /opt  
 /opt/apache-tomcat/bin/catalina.sh start
 
+
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/00c4889a-bf5f-4066-b8e6-726f1988c69e" />
+
+
 Best Practice:
 - Create a dedicated tomcat user
 - Configure systemd service for Tomcat
@@ -213,6 +217,9 @@ Best Practice:
 
 cd /opt/apache-tomcat/webapps  
 curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
+
+<img width="1920" height="231" alt="image" src="https://github.com/user-attachments/assets/c74b0f70-71d9-4cf4-8320-52e930dcd22d" />
+
 
 WAR file is auto extracted by Tomcat.
 
@@ -260,6 +267,9 @@ student_year_passed VARCHAR(10)
 
 cd /opt/apache-tomcat/lib  
 curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
+
+<img width="1905" height="196" alt="image" src="https://github.com/user-attachments/assets/3c0dacfc-d347-4570-96e2-6556c6a4136b" />
+
 
 This enables Tomcat to connect to MySQL.
 
