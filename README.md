@@ -12,8 +12,7 @@ To deploy a web application on AWS using:
 - Secure networking using VPC
 - Public and Private Subnets
 - Backend and Database in private network
-- Load Balancer & Auto Scaling for scalability
-- IAM & Security Groups for security
+- EC Instance 
 
 ---
 
@@ -33,16 +32,14 @@ To deploy a web application on AWS using:
 
 - Amazon EC2
 - Amazon VPC
+- Amazon S3
 - Public & Private Subnets
 - Internet Gateway
 - NAT Gateway
 - Route Tables
-- Elastic Load Balancer (ALB)
-- Auto Scaling Group
 - Amazon RDS (MySQL)
-- IAM (Roles & Policies)
 - Security Groups
-- Amazon CloudWatch (Monitoring)
+
 
 ---
 
@@ -53,7 +50,6 @@ Before starting:
 - AWS Account
 - Basic Linux Knowledge
 - AWS Console or AWS CLI
-- Git Installed
 - EC2 Key Pair
 
 This architecture follows a secure **3-tier AWS infrastructure**:
