@@ -96,7 +96,7 @@ Created and attached to the VPC to allow internet access for the public subnet.
 
 ---
 
-# 4. NAT Gateway (Highly Recommended)
+# 4. NAT Gateway 
 Created inside Public Subnet  
 Assigned an Elastic IP  
 Provides **internet access to private subnets** for:
