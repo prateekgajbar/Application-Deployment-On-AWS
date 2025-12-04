@@ -308,7 +308,7 @@ Restart Tomcat:
 
 Install:
 sudo yum install nginx -y  
-sudo systemctl start nginx
+sudo systemctl start nginx,
 sudo systemctl enable nginx
 
 <img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/3ce10749-7c41-4237-b31d-a66258b86f7e" />
