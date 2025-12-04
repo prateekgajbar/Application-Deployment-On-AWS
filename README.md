@@ -249,16 +249,15 @@ Create database:
 CREATE DATABASE studentapp;  
 USE studentapp;
 
-Create table:
-CREATE TABLE students(  
-student_id INT AUTO_INCREMENT PRIMARY KEY,  
-student_name VARCHAR(100),  
-student_addr VARCHAR(100),  
-student_age VARCHAR(3),  
-student_qual VARCHAR(20),  
-student_percent VARCHAR(10),  
-student_year_passed VARCHAR(10)  
-);
+CREATE TABLE if not exists students(student_id INT NOT NULL AUTO_INCREMENT,
+	student_name VARCHAR(100) NOT NULL,
+    student_addr VARCHAR(100) NOT NULL,
+	student_age VARCHAR(3) NOT NULL,
+	student_qual VARCHAR(20) NOT NULL,
+	student_percent VARCHAR(10) NOT NULL,
+	student_year_passed VARCHAR(10) NOTNULL,
+ PRIMARY KEY (student_id)
+	);
 
 <img width="1920" height="1022" alt="image" src="https://github.com/user-attachments/assets/b4f888f0-cd28-4f3d-8d81-c2404be8e741" />
 
