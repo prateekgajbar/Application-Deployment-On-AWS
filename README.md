@@ -207,11 +207,6 @@ tar -xvzf tomcat.tar.gz -C /opt
 
 <img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/00c4889a-bf5f-4066-b8e6-726f1988c69e" />
 
-
-Best Practice:
-- Create a dedicated tomcat user
-- Configure systemd service for Tomcat
-
 ---
 
 # 11. Deploy Java Application (.war)
