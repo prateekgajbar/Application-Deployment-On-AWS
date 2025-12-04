@@ -234,6 +234,9 @@ Multi-AZ: Optional
 Backup retention: Enabled  
 Security Group: Same SG as EC2
 
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/4d9bf16d-a51f-41d8-917d-4dc85c1eed80" />
+
+
 Why RDS?  
 - Auto backups  
 - High availability  
@@ -261,6 +264,9 @@ student_percent VARCHAR(10),
 student_year_passed VARCHAR(10)  
 );
 
+<img width="1920" height="1022" alt="image" src="https://github.com/user-attachments/assets/b4f888f0-cd28-4f3d-8d81-c2404be8e741" />
+
+
 ---
 
 # 14. Add MySQL Connector to Tomcat
@@ -268,7 +274,8 @@ student_year_passed VARCHAR(10)
 cd /opt/apache-tomcat/lib  
 curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
 
-<img width="1905" height="196" alt="image" src="https://github.com/user-attachments/assets/3c0dacfc-d347-4570-96e2-6556c6a4136b" />
+<img width="1920" height="1024" alt="image" src="https://github.com/user-attachments/assets/8491725e-5367-434e-9b51-00db15694a7e" />
+
 
 
 This enables Tomcat to connect to MySQL.
@@ -281,16 +288,24 @@ File to edit:
 - /opt/apache-tomcat/conf/context.xml
 
 Add resource:
+Add:
 
-<Resource name="jdbc/TestDB" auth="Container"  
-type="javax.sql.DataSource"  
-username="admin" password="yourpassword"  
-driverClassName="com.mysql.jdbc.Driver"  
-url="jdbc:mysql://RDS-endpoint:3306/studentapp"/>
+<Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
+username="admin" password="yourpassword"
+driverClassName="com.mysql.jdbc.Driver"
+url="jdbc:mysql://<RDS-endpoint>:3306/studentapp"
+
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/5590e234-5a8f-4242-a5d5-7197c049d902" />
+
+
+
 
 Restart Tomcat:
 - /opt/apache-tomcat/bin/catalina.sh stop  
 - /opt/apache-tomcat/bin/catalina.sh start
+
+<img width="1920" height="862" alt="image" src="https://github.com/user-attachments/assets/427002a0-8352-4ce2-93f6-3588ef26c24a" />
+
 
 ---
 
@@ -299,6 +314,10 @@ Restart Tomcat:
 Install:
 sudo yum install nginx -y  
 sudo systemctl start nginx
+sudo systemctl enable nginx
+
+<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/3ce10749-7c41-4237-b31d-a66258b86f7e" />
+
 
 Edit:
 /etc/nginx/nginx.conf
@@ -308,11 +327,20 @@ location / {
     proxy_pass http://App-Private-IP:8080/student/;  
 }
 
+<img width="1920" height="1025" alt="image" src="https://github.com/user-attachments/assets/0789815e-2c2f-4d10-9bf9-de695ed5ed70" />
+
+
 Restart:
 sudo systemctl restart nginx
 
 Access:
 http://Proxy-Public-IP
+
+<img width="1920" height="1022" alt="image" src="https://github.com/user-attachments/assets/a8a168af-e999-4e82-8507-21b775370330" />
+
+<img width="1920" height="976" alt="image" src="https://github.com/user-attachments/assets/c1810738-3b08-4fca-a9bf-151633956643" />
+
+
 
 
 # 3-tier Application 
