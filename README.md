@@ -1,6 +1,9 @@
 #  Application Deployment on AWS (3-Tier Architecture)
 A complete production-style deployment of a Java Web Application using:
-VPC • 3 Subnets • EC2 • RDS MariaDB 10.5 • Apache Tomcat • Nginx Reverse Proxy • NAT Gateway
+• VPC 
+• EC2
+• RDS  
+
 
 This architecture follows a secure **3-tier AWS infrastructure**:
 1. Public Layer (Nginx + Jump Server)
@@ -40,9 +43,8 @@ Below is the high-level architecture of the 3-tier deployment:
                 +----------------------+
 
 This ensures:
-- Application & DB remain private
-- Public access only through Nginx load balancer
-- Only Proxy has Public IP
+- Application & DB server  remain private
+- Only Proxy server has Public IP
 - Secure SG-to-SG communication
 
 ---
@@ -62,13 +64,12 @@ The VPC provides isolated networking for all AWS resources.
 
 # 2. Subnets (3 Total)
 
-## Public Subnet (Jump + Proxy)
+## Public Subnet (Proxy Server)
 CIDR: 172.25.0.0/20  
 Purpose:
 - Nginx Reverse Proxy
-- Jump Server for SSH
-- NAT Gateway lives in this subnet
-
+- Proxy Server for SSH
+  
 ## Private Subnet-1 (Application Layer)
 CIDR: 172.25.16.0/20 
 Purpose:
