@@ -5,8 +5,7 @@ This project demonstrates the complete deployment of a real-world production-rea
 This project is ideal for DevOps learners, Cloud Engineers, and AWS Beginners who want to understand real deployment workflow.
 
 ---
-
- Project Objective
+# Project Objective
 
 To deploy a web application on AWS using:
 
@@ -18,7 +17,7 @@ To deploy a web application on AWS using:
 
 ---
 
- Architecture Overview
+# Architecture Overview
 
 - Frontend Layer (Public Subnet) – User-facing application
 - Backend Layer (Private Subnet) – Business logic
@@ -30,7 +29,7 @@ To deploy a web application on AWS using:
 
 ---
 
- AWS Services Used
+ # AWS Services Used
 
 - Amazon EC2
 - Amazon VPC
@@ -47,7 +46,7 @@ To deploy a web application on AWS using:
 
 ---
 
- Prerequisites
+# Prerequisites
 
 Before starting:
 
@@ -56,9 +55,6 @@ Before starting:
 - AWS Console or AWS CLI
 - Git Installed
 - EC2 Key Pair
-
-
-
 
 This architecture follows a secure **3-tier AWS infrastructure**:
 1. Public Layer (Nginx + Jump Server)
