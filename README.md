@@ -23,8 +23,6 @@ To deploy a web application on AWS using:
 - Database Layer (Private Subnet) – MySQL / RDS
 - Internet Gateway – Public internet access
 - NAT Gateway – Private subnet internet access
-- Load Balancer – Traffic distribution
-- Auto Scaling Group – High availability
 
 ---
 
