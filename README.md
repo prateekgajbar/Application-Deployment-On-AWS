@@ -131,9 +131,9 @@ Route:
 
 ---
 
-# 6. Security Group Design (Professional)
+# 6. Security Group 
 
-A single consolidated SG was used for simplicity.
+A single SG was used for simplicity.
 
 ## Inbound Rules
 22 → My IP (SSH Access)  
