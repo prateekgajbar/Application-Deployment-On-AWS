@@ -1,6 +1,6 @@
 #  Application Deployment on AWS (3-Tier Architecture)
 A complete production-style deployment of a Java Web Application using:
-VPC • 3 Subnets • EC2 • RDS MariaDB 10.5 • Apache Tomcat • Nginx Reverse Proxy • Jump Server • NAT Gateway
+VPC • 3 Subnets • EC2 • RDS MariaDB 10.5 • Apache Tomcat • Nginx Reverse Proxy • NAT Gateway
 
 This architecture follows a secure **3-tier AWS infrastructure**:
 1. Public Layer (Nginx + Jump Server)
