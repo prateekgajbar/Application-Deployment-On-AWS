@@ -1,8 +1,63 @@
-#  Application Deployment on AWS (3-Tier Architecture)
-A complete production-style deployment of a Java Web Application using:
-• VPC 
-• EC2
-• RDS  
+# Application Deployment on AWS | Three-Tier Architecture Project 
+
+This project demonstrates the complete deployment of a real-world production-ready web application on AWS using a secure Three-Tier Architecture. The infrastructure is designed using best practices for security, scalability, and high availability.
+
+This project is ideal for DevOps learners, Cloud Engineers, and AWS Beginners who want to understand real deployment workflow.
+
+---
+
+ Project Objective
+
+To deploy a web application on AWS using:
+
+- Secure networking using VPC
+- Public and Private Subnets
+- Backend and Database in private network
+- Load Balancer & Auto Scaling for scalability
+- IAM & Security Groups for security
+
+---
+
+ Architecture Overview
+
+- Frontend Layer (Public Subnet) – User-facing application
+- Backend Layer (Private Subnet) – Business logic
+- Database Layer (Private Subnet) – MySQL / RDS
+- Internet Gateway – Public internet access
+- NAT Gateway – Private subnet internet access
+- Load Balancer – Traffic distribution
+- Auto Scaling Group – High availability
+
+---
+
+ AWS Services Used
+
+- Amazon EC2
+- Amazon VPC
+- Public & Private Subnets
+- Internet Gateway
+- NAT Gateway
+- Route Tables
+- Elastic Load Balancer (ALB)
+- Auto Scaling Group
+- Amazon RDS (MySQL)
+- IAM (Roles & Policies)
+- Security Groups
+- Amazon CloudWatch (Monitoring)
+
+---
+
+ Prerequisites
+
+Before starting:
+
+- AWS Account
+- Basic Linux Knowledge
+- AWS Console or AWS CLI
+- Git Installed
+- EC2 Key Pair
+
+
 
 
 This architecture follows a secure **3-tier AWS infrastructure**:
