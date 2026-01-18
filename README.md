@@ -392,3 +392,9 @@ Users → Nginx Proxy → Tomcat App → RDS Database
 All communication happens over secure private subnets, with controlled entry points.
 
 ---
+
+# Conclusion 
+
+This project demonstrates the deployment of an application on AWS using EC2 and related services, showcasing practical knowledge of cloud infrastructure, IAM security, and deployment workflows. It provides hands-on experience with real-world AWS deployment practices and lays the groundwork for CI/CD and DevOps automation.
+
+---
