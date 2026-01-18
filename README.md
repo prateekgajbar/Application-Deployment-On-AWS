@@ -188,8 +188,10 @@ A single SG was used for simplicity.
 
 <img width="1920" height="820" alt="image" src="https://github.com/user-attachments/assets/7eae361e-4303-481e-b980-bee202f7d1e7" />
 
+---
 
-## Outbound
+
+## Outbound Rules
 ALL → Allowed
 
 ## Attached To:
